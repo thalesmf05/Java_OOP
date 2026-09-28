@@ -1,5 +1,3 @@
-package wk3_inheritance.lab;
-
 public class CasualStaff extends Employee {
         private double hours, rate;
 

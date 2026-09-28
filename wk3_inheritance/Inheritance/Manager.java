@@ -1,5 +1,3 @@
-package wk3_inheritance.lab;
-
 public class Manager extends Employee{
         private double salary;
 

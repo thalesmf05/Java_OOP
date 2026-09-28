@@ -1,5 +1,3 @@
-package wk3_inheritance.lab;
-
 public class Employee {
     protected String name, id, dob;
 

@@ -1,4 +1,3 @@
-package wk3_inheritance.lab;
 
 import javax.swing.JOptionPane;
 
