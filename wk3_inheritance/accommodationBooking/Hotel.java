@@ -1,4 +1,4 @@
-public class Hotel extends Booking {
+public class Hotel extends Booking implements Payable{
     final private boolean wantBreakfast;
     private String bookingCode;
     private int selectedRoom;
@@ -19,7 +19,6 @@ public class Hotel extends Booking {
 
     @Override
     public String getFinalBooking(){
-        calculatePrice();
         selectRoom();
         generateBookingCode();
 
@@ -38,7 +37,7 @@ public class Hotel extends Booking {
     }
 
     @Override
-    public void calculatePrice() {
+    public void computeFee() {
         price = 130 * duration;
         if(wantBreakfast){
             price = price + 10;

@@ -1,4 +1,4 @@
-public class Booking {
+public abstract class Booking {
     protected String name, startDate;
     protected int duration;
 
@@ -22,8 +22,4 @@ public class Booking {
                 "\nStart date: " + startDate +
                 "\nDuration: " + duration;
     }
-
-    public void calculatePrice(){
-    }
-
 }

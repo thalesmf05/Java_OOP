@@ -1,7 +1,7 @@
-public class Cottage extends Booking {
+public class Cottage extends Booking implements Payable{
     private String bookingCode;
     final private String address;
-    private int price;
+    private int bookingPrice;
 
     public Cottage(String name, String start_date, int duration) {
         super(name, start_date, duration);
@@ -16,15 +16,14 @@ public class Cottage extends Booking {
     @Override
     public String getFinalBooking(){
         generateBookingCode();
-        calculatePrice();
         return super.getFinalBooking() +
                 "\n Address: " + address +
                 "\nBooking Code: " + bookingCode +
-                "\nPrice : " + price;
+                "\nPrice : " + bookingPrice;
     }
 
     @Override
-    public void calculatePrice() {
-        price = 60 * duration + 50;
+    public void computeFee() {
+        bookingPrice = 60 * duration + 50;
     }
 }

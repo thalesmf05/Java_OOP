@@ -32,4 +32,10 @@ public class Casual extends Employee{
     public double computeWeeklySalary() {
         return hours*rate;
     }
+
+    @Override
+    public double computePay() {
+        return hours * rate;
+    }
+
 }

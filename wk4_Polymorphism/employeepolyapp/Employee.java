@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee {
     protected String name, id, dob;
 
     public Employee(String name, String id, String dob) {
@@ -30,11 +30,12 @@ public class Employee {
         this.dob = dob;
     }
 
-    public String getDetails(){
+    public abstract getDetails(){
         return "Name: " + name + "\nId: " + id + "\nDOB: " + dob + "%";
     }
 
-    public double computeWeeklySalary(){
-        return 0;
-    }
+    public abstract double computeWeeklySalary();
+
+    public abstract double computePay();
+
 }

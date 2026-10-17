@@ -22,4 +22,9 @@ public class Manager extends Employee{
     public double computeWeeklySalary() {
         return salary/52;
     }
+
+    @Override
+    public double computePay(){
+        return salary;
+    }
 }

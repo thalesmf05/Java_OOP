@@ -1,13 +1,13 @@
 public class EmployeePolyApp {
     public static void main(String[] args) {
-        Employee e = new Employee("John Doe", "12345", "01/01/1990");
+        //Employee e = new Employee("John Doe", "12345", "01/01/1990");
 
         Manager m = new Manager("Jane Doe", "54321", "01/01/1980", 100000);
 
         Casual c = new Casual("Bob Smith", "67890", "01/01/1995", 8, 15);
 
         //get details method with overwriting
-        System.out.println(e.getDetails());
+       // System.out.println(e.getDetails());
         System.out.println(m.getDetails());
         System.out.println(c.getDetails());
 
