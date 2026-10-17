@@ -1,0 +1,30 @@
+public class Manager extends Employee implements Payable, Trainable{
+    private double salary;
+
+    public Manager(String name, String id, String dob, double salary) {
+        super(name, id, dob);
+        this.salary = salary;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String getDetails(){
+        return super.getDetails() + "\nSalary: " + salary;
+    }
+
+    @Override
+    public double computePay(){
+        return salary/52;
+    }
+
+    @Override
+    public void attendedTraining(String courseName) {
+
+    }
+}
